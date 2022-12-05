@@ -29,7 +29,7 @@ PROJECTS= {
             "💻 Web scraping using Selenium and BeautifulSoup on Naukri job site":'https://github.com/aeshna25/Web-scrapping',
             # "💻 Credit Card Fraud Prediction using AutoML , S3 bucket and Airflow",
             "💻 Linkedin connections analysis": 'https://github.com/aeshna25/LinkedIn-Connnections-Analysis',
-            "💻 Future Daily Sales Prediction of Stores": 'https://github.com/aeshna25/Future-Daily-Sales-'
+            "💻 Data analysis and modeling": 'https://eda-and-modeling-ap.streamlit.app/'
 }
 
 st.set_page_config(page_title=PAGE_TITLE,page_icon=PAGE_ICON)

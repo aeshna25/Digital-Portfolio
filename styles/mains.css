@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-    color: #268BD2 !important;  /*#d33682*/
+    color: #cc5500 !important;  /*#d33682*/
     text-decoration: none;
 }
 /* remove bullet points from icons */

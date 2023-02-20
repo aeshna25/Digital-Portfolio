@@ -17,7 +17,7 @@ DESCRIPTION = 'Senior Data Analyst| Dell Technologies, assisting sales and marke
 EMAIL= 'aeshnaagg@gmail.com'
 SOCIAL_MEDIA ={
                 'LinkedIn': 'https://linkedin.com/in/aeshna-gupta',
-                'Github':'https://aeshna25.github.io/Aeshna_Portfolio'  ,
+                'Github':'https://github.com/aeshna25'  ,
                 'Medium':'https://medium.com/@aeshnagupta',
                 'Business Project': 'https://aeshna25.github.io/Aeshna_Portfolio/'
 

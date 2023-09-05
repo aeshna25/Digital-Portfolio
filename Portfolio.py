@@ -4,7 +4,7 @@ from PIL import Image
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "mains.css"
-resume_file = current_dir / "assests" / "AeshnaGuptaResumedec.pdf"
+resume_file = current_dir / "assests" / "AeshnaGuptaDatascienceResume.pdf"
 profile_pic = current_dir / "assests" / "profile-pic.png"
 
 
@@ -54,7 +54,7 @@ with col2:
     st.download_button(
     label="Download Resume",
     data = PDFbyte,
-    file_name = 'Aeshna Gupta Resume (test).pdf',
+    file_name = 'Aeshna Gupta Resume.pdf',
     mime= 'application/pdf'
     )
     st.write("📭",EMAIL)

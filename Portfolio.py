@@ -55,7 +55,7 @@ with col2:
     label="Download Resume",
     data = PDFbyte,
     file_name = 'Aeshna Gupta Resume (test)',
-    mime= 'application/octet-stream'
+    mime= 'application/pdf'
     )
     st.write("📭",EMAIL)
 

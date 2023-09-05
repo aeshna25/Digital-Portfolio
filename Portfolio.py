@@ -171,6 +171,8 @@ st.subheader("Pursuits & Interests")
 st.write("---")
 
 
+
+# Define a CSS style for the button with a rectangular border
 button_style = """
     background-color: #008CBA;
     color: white;
@@ -180,25 +182,68 @@ button_style = """
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    margin: 5px; /* Add margin for spacing */
 """
 
+# Define the URLs and labels for each button
+button_data = [
+    {'label': 'Volunteering', 'link': 'https://example.com/volunteering'},
+    {'label': 'Photography', 'link': 'https://example.com/photography'},
+    {'label': 'Blogging', 'link': 'https://example.com/blogging'},
+    {'label': 'Digital Illustration', 'link': 'https://example.com/illustration'}
+]
+
+# Create a layout with 4 columns
 columns = st.columns(4)
-# columns[0].button('Volunteering')
-# columns[1].button('Photography')
-# columns[2].button('Blogging')
-# columns[3].button('Digital Illustration')
 
-# Define the URLs for each button
-volunteering_link = 'https://example.com/volunteering'
-photography_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
-blogging_link = 'https://medium.com/@aeshnagupta'
-illustration_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
+# Add button-like links with rectangular borders to each column
+for data in button_data:
+    label = data['label']
+    link = data['link']
+    
+    # Create a div element with the button style and rectangular border
+    button_html = f"""
+        <div style="{button_style} border: 2px solid #CC5500;">
+            <a href="{link}" target="_blank" style="text-decoration: none;">
+                {label}
+            </a>
+        </div>
+    """
+    
+    # Display the button-like link in a column
+    columns[button_data.index(data)].markdown(button_html, unsafe_allow_html=True)
 
-# Add buttons with hyperlinks
-columns[0].markdown(f'<a href="{volunteering_link}" target="_blank">Volunteering</a>', unsafe_allow_html=True)
-columns[1].markdown(f'<a href="{photography_link}" target="_blank">Photography</a>', unsafe_allow_html=True)
-columns[2].markdown(f'<a href="{blogging_link}" target="_blank">Blogging</a>', unsafe_allow_html=True)
-columns[3].markdown(f'<a href="{illustration_link}" target="_blank">Digital Illustration</a>', unsafe_allow_html=True)
+
+
+
+# button_style = """
+#     background-color: #008CBA;
+#     color: white;
+#     padding: 10px 20px;
+#     border: 2px solid #CC5500; /* Orange border */
+#     border-radius: 5px;
+#     cursor: pointer;
+#     text-decoration: none;
+#     display: inline-block;
+# """
+
+# columns = st.columns(4)
+# # columns[0].button('Volunteering')
+# # columns[1].button('Photography')
+# # columns[2].button('Blogging')
+# # columns[3].button('Digital Illustration')
+
+# # Define the URLs for each button
+# volunteering_link = 'https://example.com/volunteering'
+# photography_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
+# blogging_link = 'https://medium.com/@aeshnagupta'
+# illustration_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
+
+# # Add buttons with hyperlinks
+# columns[0].markdown(f'<a href="{volunteering_link}" target="_blank">Volunteering</a>', unsafe_allow_html=True)
+# columns[1].markdown(f'<a href="{photography_link}" target="_blank">Photography</a>', unsafe_allow_html=True)
+# columns[2].markdown(f'<a href="{blogging_link}" target="_blank">Blogging</a>', unsafe_allow_html=True)
+# columns[3].markdown(f'<a href="{illustration_link}" target="_blank">Digital Illustration</a>', unsafe_allow_html=True)
 
 
 # for deployment:

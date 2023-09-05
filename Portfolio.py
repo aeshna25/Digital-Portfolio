@@ -4,7 +4,7 @@ from PIL import Image
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "mains.css"
-resume_file = current_dir / "assests" / "Aeshna Gupta Data analyst Resume.pdf"
+resume_file = current_dir / "assests" / "AeshnaGuptaDatascience Resume.pdf"
 profile_pic = current_dir / "assests" / "profile-pic.png"
 
 
@@ -71,8 +71,8 @@ st.write('#')
 st.subheader('Experience and Qualifications')
 st.write("---")
 st.write(""" 
-- ✔️ 2.5 Years experience extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python , SQL and Excel
+- ✔️ 3+ Years experience extracting actionable insights from data
+- ✔️ Strong hands on experience and knowledge in Python , SQL, PowerBI and Excel
 - ✔️ Good understanding of statistical principals and their respective applications
 - ✔️ Experience in presenting analysis to non-technical audience
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
@@ -86,10 +86,10 @@ st.write("---")
 st.write(
 """
 - 💻 Programming: Python(Scikit-learn, Pandas), SQL
-- 🖌️ Data Visualization: Plotly, Streamlit, Ms Excel
+- 🖌️ Data Visualization: Plotly, Streamlit, Ms Excel, PowerBI
 - 📚 Modeling: AutoML, Random forest, Kmean clustering, PCA, linear regression, decision tress
 - 💾 Database: Teradata, SSMS, SSIS
-- 📠 Other skills: Research, Reports and Forecast, Quantitative Market analysis, Communication, Decision analysis, Critical thinking, predictive analysis
+- 📠 Other skills: MLOps, Research, Reports and Forecast, Quantitative Market analysis, Communication, Decision analysis, Critical thinking, predictive analysis
 """
 )
 

@@ -54,7 +54,7 @@ with col2:
     st.download_button(
     label="Download Resume",
     data = PDFbyte,
-    file_name = 'Aeshna Gupta Resume',
+    file_name = 'Aeshna Gupta Resume (test)',
     mime= 'application/octet-stream'
     )
     st.write("📭",EMAIL)

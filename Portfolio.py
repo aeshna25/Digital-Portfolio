@@ -172,10 +172,10 @@ st.write("---")
 
 
 button_style = """
-    background-color: #cc5500;
+    background-color: #008CBA;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 2px solid #CC5500; /* Orange border */
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;

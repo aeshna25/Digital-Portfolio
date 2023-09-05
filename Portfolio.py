@@ -175,7 +175,7 @@ st.write("---")
 # Define a CSS style for the button with a rectangular border
 
 button_style = """
-    background-color: black; /* Black background */
+    background-color: #515151; /* Black background */
     color: white;
     padding: 10px 20px;
     border: 2px solid #CC5500; /* Orange border */

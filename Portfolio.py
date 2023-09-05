@@ -173,8 +173,9 @@ st.write("---")
 
 
 # Define a CSS style for the button with a rectangular border
+
 button_style = """
-    background-color: #008CBA;
+    background-color: black; /* Black background */
     color: white;
     padding: 10px 20px;
     border: 2px solid #CC5500; /* Orange border */
@@ -184,6 +185,7 @@ button_style = """
     display: inline-block;
     margin: 5px; /* Add margin for spacing */
 """
+
 
 # Define the URLs and labels for each button
 button_data = [

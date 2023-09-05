@@ -170,20 +170,32 @@ st.write('\n')
 st.subheader("Pursuits & Interests")
 st.write("---")
 
+
+button_style = """
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+"""
+
 columns = st.columns(4)
-columns[0].button('Volunteering')
+# columns[0].button('Volunteering')
 # columns[1].button('Photography')
 # columns[2].button('Blogging')
 # columns[3].button('Digital Illustration')
 
 # Define the URLs for each button
-# volunteering_link = 'https://example.com/volunteering'
+volunteering_link = 'https://example.com/volunteering'
 photography_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
 blogging_link = 'https://medium.com/@aeshnagupta'
 illustration_link = 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='
 
 # Add buttons with hyperlinks
-# columns[0].markdown(f'<a href="{volunteering_link}" target="_blank">Volunteering</a>', unsafe_allow_html=True)
+columns[0].markdown(f'<a href="{volunteering_link}" target="_blank">Volunteering</a>', unsafe_allow_html=True)
 columns[1].markdown(f'<a href="{photography_link}" target="_blank">Photography</a>', unsafe_allow_html=True)
 columns[2].markdown(f'<a href="{blogging_link}" target="_blank">Blogging</a>', unsafe_allow_html=True)
 columns[3].markdown(f'<a href="{illustration_link}" target="_blank">Digital Illustration</a>', unsafe_allow_html=True)

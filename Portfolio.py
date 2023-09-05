@@ -189,10 +189,10 @@ button_style = """
 
 # Define the URLs and labels for each button
 button_data = [
-    {'label': 'Volunteering', 'link': 'https://example.com/volunteering'},
-    {'label': 'Photography', 'link': 'https://example.com/photography'},
-    {'label': 'Blogging', 'link': 'https://example.com/blogging'},
-    {'label': 'Digital Illustration', 'link': 'https://example.com/illustration'}
+    {'label': 'Volunteering', 'link': ''},
+    {'label': 'Photography', 'link': 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='},
+    {'label': 'Blogging', 'link': 'https://medium.com/@aeshnagupta'},
+    {'label': 'Digital Illustration', 'link': 'https://instagram.com/keepitsimpletv?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=='}
 ]
 
 # Create a layout with 4 columns
